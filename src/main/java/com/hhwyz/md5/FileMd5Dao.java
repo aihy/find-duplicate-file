@@ -28,4 +28,6 @@ public interface FileMd5Dao {
     int updateByPrimaryKeySelective(FileMd5 record);
 
     int updateByPrimaryKey(FileMd5 record);
+
+    void deleteAll();
 }

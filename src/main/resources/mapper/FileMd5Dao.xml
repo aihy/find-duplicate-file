@@ -104,6 +104,10 @@
             <include refid="Example_Where_Clause"/>
         </if>
     </delete>
+    <delete id="deleteAll">
+        delete
+        from file_md5
+    </delete>
     <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.hhwyz.md5.FileMd5" useGeneratedKeys="true">
         insert into "file_md5" ("path",
                                 md5, "size")
